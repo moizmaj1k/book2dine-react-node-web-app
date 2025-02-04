@@ -1,0 +1,107 @@
+/* SearchRestaurants.css */
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+
+  /* Main container to hold both map and restaurant cards */
+.map-and-restaurants-container {
+    display: flex;  /* Use flexbox for side-by-side layout */
+    justify-content: space-between;  /* Add space between map and restaurant cards */
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .search-input {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 250px;
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .search-button:hover {
+    background-color: #45a049;
+  }
+
+  /* Map container styling */
+.map-container {
+    flex: 1; /* Let the map take up available space */
+    height: 750px; /* Set a fixed height for the map */
+    margin-right: 20px; /* Add some space between the map and restaurant cards */
+  }
+  
+/* Container for restaurant cards */
+.restaurants-container {
+    flex: 1;  /* Let the restaurant cards take up the available space */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    gap: 0px;  /* Add space between the cards */
+    padding-left: 10px;
+    width: 50%; /* You can adjust the width as needed */
+  }
+
+/* Individual restaurant card styling */
+.restaurant-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  width: 250px; /* Full width for each card */
+  transition: transform 0.2s ease;
+  height: 250px; /* Make the cards smaller by adjusting height */
+}
+  
+  .restaurant-card:hover {
+    transform: scale(1.05);
+  }
+  
+/* Other card text styling */
+.restaurant-name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .restaurant-type,
+  .restaurant-location {
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .restaurant-description {
+    color: #555;
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  
+  /* Style for the Book Button (Blue) */
+  .book-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff; /* Blue color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .book-button:hover {
+    background-color: #0056b3; /* Darker blue for hover effect */
+  }
