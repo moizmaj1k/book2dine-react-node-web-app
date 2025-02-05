@@ -31,4 +31,5 @@ router.get("/:location/:type", (req, res) => {
     });
 });
 
+
 module.exports = router;
